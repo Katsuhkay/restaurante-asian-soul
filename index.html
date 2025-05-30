@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asian Soul</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="m-0 navbar-brand d-flex section-title align-items-center">
+                <img src="https://flagcdn.com/w40/jp.png" alt="Japão" class="flag me-1">
+                <img src="https://flagcdn.com/w40/kr.png" alt="Coreia do Sul" class="flag me-2">
+                Restaurante Asian Soul
+                <img src="https://flagcdn.com/w40/th.png" alt="Tailândia" class="flag ms-2">
+                <img src="https://flagcdn.com/w40/cn.png" alt="China" class="flag ms-1">
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="me-1 bi bi-house-door"></i>
+                            Sobre o Restaurante
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-calendar-check"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-card-text"></i>
+                            Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-left-text"></i>
+                            Fale conosco!
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+            <section id="sobre-o-restaurante">
+        <div id="carousel" class="carousel slide carousel-fade fade-in" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/slide/slide1_resized.jpg" class="d-block w-100 fade-in" alt="Fachada do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slide/slide2_resized.jpg" class="d-block w-100 fade-in" alt="Bar do restaurante">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/slide/slide3_resized.jpg" class="d-block w-100 fade-in" alt="Mesas do restaurante">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="./img/produtos/buffet.jpg" alt="Buffet do restaurante" class="d-block w-100 rounded buffet-img fade-in">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title fade-in">Sobre o restaurante</h2>
+                        <p class="fade-in">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequuntur, quidem adipisci cupiditate voluptate, perferendis aliquid possimus, ut similique blanditiis voluptates.
+                        </p>
+                        <h3 class="section-subtitle fade-in">Sobre o espaço</h3>
+                        <p class="fade-in">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis nostrum illum, est odit quaerat quibusdam labore eaque laudantium, officiis commodi eligendi.
+                        </p>
+                        <ul class="fade-in">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
