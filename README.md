@@ -51,6 +51,8 @@ git clone https://github.com/seu-usuario/asian-soul-restaurante.git
 
 2. Abra o arquivo `index.html` no seu navegador preferido
 
+Ou acesse: https://restaurante-asian-soul.vercel.app/
+
 ## Créditos e Agradecimentos
 
 Este projeto contou com o suporte da IA [DeepSeek](https://www.deepseek.com) para:
