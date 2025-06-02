@@ -33,19 +33,19 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#eventos" class="nav-link">
                             <i class="bi bi-calendar-check"></i>
                             Eventos
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#cardapio" class="nav-link">
                             <i class="bi bi-card-text"></i>
                             Cardápio
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#" class="nav-link">
+                        <a href="#fale-conosco" class="nav-link">
                             <i class="bi bi-chat-left-text"></i>
                             Fale conosco!
                         </a>
@@ -56,60 +56,572 @@
     </header>
 
     <div data-bs-spy="scroll" data-bs-target="cabecalho">
-            <section id="sobre-o-restaurante">
-        <div id="carousel" class="carousel slide carousel-fade fade-in" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <section id="sobre-o-restaurante">
+            <div id="carousel" class="carousel slide carousel-fade fade-in" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./img/slide/slide1_resized.jpg" class="d-block w-100 fade-in" alt="Fachada do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slide/slide2_resized.jpg" class="d-block w-100 fade-in" alt="Bar do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/slide/slide3_resized.jpg" class="d-block w-100 fade-in" alt="Mesas do restaurante">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./img/slide/slide1_resized.jpg" class="d-block w-100 fade-in" alt="Fachada do restaurante">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/slide/slide2_resized.jpg" class="d-block w-100 fade-in" alt="Bar do restaurante">
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/slide/slide3_resized.jpg" class="d-block w-100 fade-in" alt="Mesas do restaurante">
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <img src="./img/produtos/buffet.jpg" alt="Buffet do restaurante" class="d-block w-100 rounded shadow-lg buffet-img fade-in">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title fade-in">
+                                <i class="bi bi-building text-danger me-2"></i> Sobre o Asian Soul
+                            </h2>
+                            <p class="fade-in lead">
+                                Fundado em 2010, o <strong>Asian Soul</strong> nasceu da paixão por unir as tradições culinárias do Japão, Coreia, China e Tailândia em uma experiência autêntica. Nossos chefs, treinados em Kyoto, Seul e Bangkok, recriam receitas ancestrais com toques contemporâneos.
+                            </p>
+                            
+                            <h3 class="section-subtitle fade-in mt-4">
+                                <i class="bi bi-geo-alt text-danger me-2"></i> Sobre o espaço
+                            </h3>
+                            <p class="fade-in">
+                                Nossa arquitetura minimalista combina elementos de:
+                            </p>
+                            <ul class="fade-in list-unstyled">
+                                <li class="mb-2"><i class="bi bi-check-square-fill text-success me-2"></i> <strong>Jardins Zen japoneses</strong> - com bambuzais e lago de carpas</li>
+                                <li class="mb-2"><i class="bi bi-check-square-fill text-success me-2"></i> <strong>Hanok coreano</strong> - pisos aquecidos e detalhes em madeira</li>
+                                <li class="mb-2"><i class="bi bi-check-square-fill text-success me-2"></i> <strong>Pagodes chineses</strong> - telhados curvados e lanternas vermelhas</li>
+                            </ul>
+
+                            <div class="row mt-4 fade-in">
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-people fs-3 text-danger me-3"></i>
+                                        <div>
+                                            <h5 class="mb-0">Capacidade</h5>
+                                            <p class="mb-0">120 lugares</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <i class="bi bi-clock-history fs-3 text-danger me-3"></i>
+                                        <div>
+                                            <h5 class="mb-0">Funcionamento</h5>
+                                            <p class="mb-0">Ter-Dom: 18h-23h</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-
-        <div class="pt-5 pb-5">
+        <section id="eventos" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-5">
-                        <img src="./img/produtos/buffet.jpg" alt="Buffet do restaurante" class="d-block w-100 rounded buffet-img fade-in">
+                    <h2 class="section-title text-center fade-in">
+                        Celebre momentos especiais
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="./img/produtos/aniversário.jpg" class="d-block w-100 rounded shadow" alt="Aniversário">
+                        <h3 class="section-subtitle fade-in">
+                            <i class="bi bi-balloon-heart text-danger me-2"></i> Aniversários
+                        </h3>
+                        <p class="text-justify">
+                            Celebre seu aniversário com a autenticidade da culinária asiática! Oferecemos pacotes completos com decoração temática (lanternas chinesas, sakura japonesa ou hanbok coreano), menu personalizado e bolo tradicional mochi. Inclui taça de saquê gratuita para o aniversariante.
+                        </p>
                     </div>
-                    <div class="col-md-7">
-                        <h2 class="section-title fade-in">Sobre o restaurante</h2>
-                        <p class="fade-in">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis consequuntur, quidem adipisci cupiditate voluptate, perferendis aliquid possimus, ut similique blanditiis voluptates.
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <img src="./img/produtos/confraternizacao.webp" class="d-block w-100 rounded shadow" alt="Confraternização">
+                        <h3 class="section-subtitle fade-in">
+                            <i class="bi bi-people-fill text-primary me-2"></i> Confraternização
+                        </h3>
+                        <p class="text-justify">
+                            Reúna sua equipe para um jantar de confraternização inesquecível! Espaço privativo com capacidade para até 50 pessoas, menu degustação de 8 pratos asiáticos e atividades interativas como oficina de sushi ou competição de hashi. Opção de open bar com drinks temáticos (samurai sour, yuzu mojito).
                         </p>
-                        <h3 class="section-subtitle fade-in">Sobre o espaço</h3>
-                        <p class="fade-in">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis nostrum illum, est odit quaerat quibusdam labore eaque laudantium, officiis commodi eligendi.
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/produtos/casamento.jpg" class="d-block w-100 rounded shadow" alt="Casamento">
+                        <h3 class="section-subtitle fade-in">
+                            <i class="bi bi-hearts text-danger me-2"></i> Casamentos
+                        </h3>
+                        <p class="text-justify">
+                            Cerimônia e recepção com atmosfera de conto oriental. Oferecemos:
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Decoração inspirada nos casamentos reais da Dinastia Joseon</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Menu imperial chinês com 12 pratos de prosperidade</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Cerimônia do chá tradicional japonesa</li>
+                            </ul>
                         </p>
-                        <ul class="fade-in">
-                            <li>Item1</li>
-                            <li>Item2</li>
-                            <li>Item3</li>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <h2 class="section-title text-center mb-5 fade-in">
+                <i class="bi bi-menu-up"></i> Cardápio Asian Soul
+            </h2>
+        </div>
+
+        <!-- Navegação por categorias -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="cardapioTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="entradas-tab" data-bs-toggle="tab" data-bs-target="#entradas" type="button" role="tab">Entradas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pratos-tab" data-bs-toggle="tab" data-bs-target="#pratos" type="button" role="tab">Pratos Principais</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bebidas-tab" data-bs-toggle="tab" data-bs-target="#bebidas" type="button" role="tab">Bebidas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sobremesas-tab" data-bs-toggle="tab" data-bs-target="#sobremesas" type="button" role="tab">Sobremesas</button>
+            </li>
+        </ul>
+
+        <!-- Conteúdo das abas -->
+        <div class="tab-content" id="cardapioContent">
+            <!-- Entradas -->
+            <div class="tab-pane fade show active" id="entradas" role="tabpanel" aria-labelledby="entradas-tab">
+                <div class="row">
+                    <!-- Japão -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-danger text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/jp.png" alt="Japão" class="me-2">
+                                <h5 class="mb-0">Entradas Japonesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Edamame <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Vagens de soja jovens com sal marinho</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Takoyaki <span class="badge bg-danger badge-spicy float-end">Picante</span></h6>
+                                    <p class="small text-muted">Bolinhos de polvo com molho okonomiyaki</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coreia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/kr.png" alt="Coreia" class="me-2">
+                                <h5 class="mb-0">Entradas Coreanas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Kimchi <span class="badge bg-danger badge-spicy float-end">Picante</span></h6>
+                                    <p class="small text-muted">Napa fermentada com pimenta gochugaru</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Hobak Jeon <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Panquecas de abobrinha crocantes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tailândia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-warning text-dark d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/th.png" alt="Tailândia" class="me-2">
+                                <h5 class="mb-0">Entradas Tailandesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Satay Gai</h6>
+                                    <p class="small text-muted">Espetinhos de frango com molho de amendoim</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Som Tum <span class="badge bg-danger badge-spicy float-end">Picante</span></h6>
+                                    <p class="small text-muted">Salada de papaia verde com amendoim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- China -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/cn.png" alt="China" class="me-2">
+                                <h5 class="mb-0">Entradas Chinesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Xiaolongbao</h6>
+                                    <p class="small text-muted">Dumplings com caldo de porco</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Chun Juan <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Rolinhos primavera vegetariano</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pratos Principais -->
+            <div class="tab-pane fade" id="pratos" role="tabpanel" aria-labelledby="pratos-tab">
+                <div class="row">
+                    <!-- Japão -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-danger text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/jp.png" alt="Japão" class="me-2">
+                                <h5 class="mb-0">Pratos Japoneses</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Tonkatsu</h6>
+                                    <p class="small text-muted">Lombo de porco empanado com repolho</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Nasu Dengaku <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Berinjela com pasta de missô doce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coreia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/kr.png" alt="Coreia" class="me-2">
+                                <h5 class="mb-0">Pratos Coreanos</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Galbi</h6>
+                                    <p class="small text-muted">Costelas bovinas marinadas em yangnyeom</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Bibimbap <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Tigela de arroz com vegetais e ovo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tailândia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-warning text-dark d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/th.png" alt="Tailândia" class="me-2">
+                                <h5 class="mb-0">Pratos Tailandeses</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Pad Thai</h6>
+                                    <p class="small text-muted">Macarrão salteado com camarão</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Pad Pak Ruam <span class="badge bg-success float-end">Veg</span></h6>
+                                    <p class="small text-muted">Salteado de vegetais com tofu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- China -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/cn.png" alt="China" class="me-2">
+                                <h5 class="mb-0">Pratos Chineses</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Pato à Pequim</h6>
+                                    <p class="small text-muted">Servido com panquecas e molho hoisin</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Mapo Tofu <span class="badge bg-danger badge-spicy float-end">Picante</span></h6>
+                                    <p class="small text-muted">Tofu com molho picante de feijão</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="tab-pane fade" id="bebidas" role="tabpanel" aria-labelledby="bebidas-tab">
+                <div class="row">
+                    <!-- Bebidas sem álcool -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">Bebidas Sem Álcool</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6><img src="https://flagcdn.com/w20/jp.png" alt="Japão" class="flag-icon me-2">Japão</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Ramune (refrigerante japonês)</li>
+                                            <li>Mugicha (chá de cevada)</li>
+                                        </ul>
+                                        
+                                        <h6><img src="https://flagcdn.com/w20/kr.png" alt="Coreia" class="flag-icon me-2">Coreia</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Sikhye (bebida de arroz doce)</li>
+                                            <li>Omija Cha (chá de 5 sabores)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6><img src="https://flagcdn.com/w20/th.png" alt="Tailândia" class="me-2">Tailândia</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Nam Manao (limonada tailandesa)</li>
+                                            <li>Cha Yen (chá gelado com leite)</li>
+                                        </ul>
+                                        
+                                        <h6 class="mt-3"><img src="https://flagcdn.com/w20/cn.png" alt="China" class="me-2">China</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Suanmeitang (bebida de ameixa)</li>
+                                            <li>Bubble Tea clássico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bebidas alcoólicas -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h5 class="mb-0">Bebidas Alcoólicas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6><img src="https://flagcdn.com/w20/jp.png" alt="Japão" class="flag-icon me-2">Japão</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Sake Junmai</li>
+                                            <li>Umeshu (licor de ameixa)</li>
+                                        </ul>
+                                        
+                                        <h6><img src="https://flagcdn.com/w20/kr.png" alt="Coreia" class="flag-icon me-2">Coreia</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Soju (Yuja ou original)</li>
+                                            <li>Makgeolli (arroz fermentado)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6><img src="https://flagcdn.com/w20/th.png" alt="Tailândia" class="me-2">Tailândia</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Singha Soda (cerveja + licor de lima)</li>
+                                            <li>Mekhong (whisky tailandês)</li>
+                                        </ul>
+                                        
+                                        <h6 class="mt-3"><img src="https://flagcdn.com/w20/cn.png" alt="China" class="me-2">China</h6>
+                                        <ul class="list-unstyled small">
+                                            <li class="mb-2">Baijiu (destilado de sorgo)</li>
+                                            <li>Huangjiu (vinho de arroz amarelo)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobremesas -->
+            <div class="tab-pane fade" id="sobremesas" role="tabpanel" aria-labelledby="sobremesas-tab">
+                <div class="row">
+                    <!-- Japão -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-danger text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/jp.png" alt="Japão" class="me-2">
+                                <h5 class="mb-0">Sobremesas Japonesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Mochi de Chá Verde</h6>
+                                    <p class="small text-muted">Bolinho de arroz com recheio doce</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Dorayaki</h6>
+                                    <p class="small text-muted">Panquecas com pasta de feijão doce</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Coreia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-primary text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/kr.png" alt="Coreia" class="me-2">
+                                <h5 class="mb-0">Sobremesas Coreanas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Bungeoppang</h6>
+                                    <p class="small text-muted">Peixe de waffle com pasta doce</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Yakgwa</h6>
+                                    <p class="small text-muted">Docinho de mel frito</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tailândia -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-warning text-dark d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/th.png" alt="Tailândia" class="me-2">
+                                <h5 class="mb-0">Sobremesas Tailandesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Mango Sticky Rice</h6>
+                                    <p class="small text-muted">Manga com arroz glutinoso e leite de coco</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Tub Tim Grob</h6>
+                                    <p class="small text-muted">Castanhas em água de coco gelada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- China -->
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-header bg-dark text-white d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/cn.png" alt="China" class="me-2">
+                                <h5 class="mb-0">Sobremesas Chinesas</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="menu-item mb-3">
+                                    <h6>Bolinho da Lua</h6>
+                                    <p class="small text-muted">Massa folhada com pasta de feijão ou lótus</p>
+                                </div>
+                                <div class="menu-item">
+                                    <h6>Pudim de Manga</h6>
+                                    <p class="small text-muted">Pudim cremoso com calda de manga</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">
+                    Fale conosco
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input required type="text" class="form-control" name="nome" id="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                            <input required type="email" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                            <input type="tel" class="form-control" name="telefone" id="telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea required class="form-control" id="mensagem" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row mb-4">
+                        <h2 class="section-title text-center">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais
+                        </h2>
+                        <div class="social-links text-center">
+                            <a href="#" class="btn btn-outline-danger mb-2 me-2">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-danger mb-2 me-2">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                            <a href="#" class="btn btn-outline-danger mb-2">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="section-title text-center">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h2>
+                        <div class="text-center">
+                            <p>
+                                <i class="bi bi-geo-alt-fill text-danger"></i> 
+                                Rua das Flores, 123 - Jardim Oriental<br>
+                                São Paulo - SP<br>
+                                CEP: 01234-567
+                            </p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658447536!3d-23.565734367638155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623866426981!5m2!1spt-BR!2sbr" 
+                                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     </div>
+
+        <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">
+                &copy; 2025 Asian Soul - Todos os direitos reservados | 
+                Desenvolvido por <a href="https://www.linkedin.com/in/alex-magalhaes-lkn/" target="_blank" class="text-danger">Alex Magalhães</a>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>

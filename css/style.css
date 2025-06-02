@@ -1,16 +1,19 @@
+/* Estilos gerais */
 body {
     font-family: Roboto, sans-serif;
-    background-color: #ffeaea; /* rosa salmão suave */
-    color: #4a4a4a; /* cor do texto para bom contraste */
+    background-color: #ffeaea;
+    color: #4a4a4a;
 }
 
+/* Header e navegação */
 .navbar {
-    background-color: #BC002D; /* vermelho forte */
+    background-color: #BC002D;
 }
 
-.nav .nav-link.active {
-    background-color: white;
-    color: #BC002D;
+.navbar-brand {
+    font-family: Pacifico, cursive;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .nav .nav-link,
@@ -19,10 +22,13 @@ body {
     color: white;
 }
 
-.navbar-brand {
-    font-family: Pacifico, cursive;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+.nav .nav-link.active {
+    background-color: white;
+    color: #BC002D;
+}
+
+.navbar-toggler {
+    background-color: white;
 }
 
 .flag {
@@ -35,8 +41,20 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-toggler {
-    background-color: white;
+/* Seção Sobre o Restaurante */
+#sobre-o-restaurante {
+    background: linear-gradient(135deg, #fff9f9 0%, #ffeaea 100%);
+}
+
+.buffet-img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border: 3px solid #BC002D;
+    transition: transform 0.5s;
+}
+
+.buffet-img:hover {
+    transform: scale(1.02);
 }
 
 h2.section-title {
@@ -56,19 +74,132 @@ h3.section-subtitle {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.buffet-img {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+.lead {
+    color: #333;
+    font-weight: 500;
+    line-height: 1.6;
 }
 
+.list-unstyled i {
+    font-size: 1.1rem;
+}
+
+/* Carousel */
 .carousel-item img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Seção Eventos */
+/* (Estilos específicos já estão cobertos pelos títulos e subtítulos) */
+
+/* Seção Cardápio */
+#cardapio {
+    background-color: #fff;
+    background-image: radial-gradient(#ffeaea 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.nav-tabs .nav-link {
+    color: #BC002D;
+    font-weight: 500;
+    border: none;
+    position: relative;
+}
+
+.nav-tabs .nav-link.active {
+    color: #BC002D;
+    background: transparent;
+    border: none;
+}
+
+.nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #BC002D;
+}
+
+.card-header {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.1rem;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(188, 0, 45, 0.1) !important;
+}
+
+.menu-item {
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 0.8rem;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.badge {
+    font-weight: 400;
+    font-size: 0.7rem;
+}
+
+.badge-spicy {
+    background-color: #FF6B6B;
+    color: white !important;
+    position: relative;
+}
+
+.badge-spicy:before {
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px 1px 0 white,
+        1px 1px 0 white;
+    position: absolute;
+    left: 0.3rem;
+}
+
+#bebidas .flag-icon {
+    border: 2px solid #BC002D;
+    background-color: white;
+    padding: 2px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+#bebidas .card-header .flag-icon {
+    border-color: white;
+}
+
+/* Seção Fale Conosco */
+.text-colored {
+    color: #BC002D;
+}
+
+/* Animações */
 .zoom-in {
     transform: scale(0.9);
     opacity: 0;
     animation: zoomIn 1s ease forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fade-in.active {
+    animation: fadeInUp 1s ease forwards;
 }
 
 @keyframes zoomIn {
@@ -89,12 +220,17 @@ h3.section-subtitle {
     }
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+/* Rodapé */
+footer {
+    border-top: 2px solid #BC002D;
 }
 
-.fade-in.active {
-    animation: fadeInUp 1s ease forwards;
+footer a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff6b6b !important;
+    text-decoration: underline;
 }
