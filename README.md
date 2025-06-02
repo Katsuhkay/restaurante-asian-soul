@@ -1,10 +1,7 @@
 # 🍜 Asian Soul - Experiência Gastronômica Asiática  
 
 [![Vercel Deployment](https://img.shields.io/badge/LIVE%20DEMO-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://restaurante-asian-soul.vercel.app/)
-[![GitHub Last Commit](https://img.shields.io/github/last-commit/seu-user/asian-soul?style=for-the-badge&logo=github)](https://github.com/seu-user/asian-soul/commits/main)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-
-![Asian Soul Preview](preview.jpg)
 
 ## ✨ Destaques do Projeto  
 
